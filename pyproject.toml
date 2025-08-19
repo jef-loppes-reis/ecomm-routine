@@ -1,0 +1,18 @@
+[project]
+name = "ecomm-routine"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ecomm-postgres",
+    "loguru>=0.7.3",
+    "meli-connect",
+    "rich>=14.1.0",
+    "whapi-service",
+]
+
+[tool.uv.sources]
+ecomm-postgres = { git = "https://github.com/E-commerce-Pecista/ecomm-postgres" }
+meli-connect = { git = "https://github.com/E-commerce-Pecista/meli-connect" }
+whapi-service = { git = "https://github.com/E-commerce-Pecista/whapi-service" }
